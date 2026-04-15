@@ -73,12 +73,28 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-size: 22px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1;
 }
+.logo-img {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(225, 6, 0, 0.35));
+  transition: transform 0.4s ease;
+}
+.logo:hover .logo-img { transform: rotate(-8deg) scale(1.05); }
 .logo span { color: var(--accent); }
+@media (max-width: 420px) {
+  .logo { font-size: 18px; gap: 8px; }
+  .logo-img { width: 38px; height: 38px; }
+}
 
 .main-nav { display: none; }
 .main-nav ul { display: flex; gap: 8px; align-items: center; }
