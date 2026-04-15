@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim — Çiçek Lojistik</title>
+  <meta name="description" content="Çiçek Lojistik ile iletişime geçin, sevkiyatınız için ücretsiz teklif alın." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">ÇİÇEK <span>LOJİSTİK</span></a>
+    <nav class="main-nav" aria-label="Ana menü">
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Hizmetler</a>
+          <ul class="dropdown-menu">
+            <li><a href="karayolu.html">🚛 Karayolu Taşımacılığı</a></li>
+            <li><a href="denizyolu.html">🚢 Denizyolu Taşımacılığı</a></li>
+            <li><a href="havayolu.html">✈️ Havayolu Taşımacılığı</a></li>
+          </ul>
+        </li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="ulkeler.html">Ülkeler</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Menüyü aç/kapa"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Mobil menü">
+  <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="karayolu.html">Hizmetler</a></li>
+    <li class="sub"><a href="karayolu.html">— Karayolu</a></li>
+    <li class="sub"><a href="denizyolu.html">— Denizyolu</a></li>
+    <li class="sub"><a href="havayolu.html">— Havayolu</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="ulkeler.html">Çalıştığımız Ülkeler</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80')">
+  <div class="page-hero-content">
+    <h1><span>İletişim</span></h1>
+    <p>Sevkiyatınız için hemen ücretsiz teklif alın</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <!-- SOL: İletişim Bilgileri -->
+      <div class="contact-info reveal">
+        <h3>Bize Ulaşın</h3>
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div><strong>Adres</strong><span>Havaalanı Kavşağı No:42<br>Bakırköy / İstanbul / TÜRKİYE</span></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📞</div>
+          <div><strong>Telefon</strong><span>+90 212 555 00 00<br>+90 532 111 22 33 (7/24)</span></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">✉️</div>
+          <div><strong>E-posta</strong><span>info@cicek-lojistik.com<br>teklif@cicek-lojistik.com</span></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">🕐</div>
+          <div><strong>Çalışma Saatleri</strong><span>Pazartesi - Cumartesi: 08:00 - 18:00<br>Pazar: Kapalı (Acil: 7/24 hat)</span></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">🚛</div>
+          <div><strong>Operasyon Merkezi</strong><span>TIR Parkımız: Hadımköy / İstanbul</span></div>
+        </div>
+      </div>
+
+      <!-- SAĞ: Form -->
+      <div class="reveal">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row two">
+            <div class="form-field">
+              <label for="name">Ad Soyad</label>
+              <input type="text" id="name" name="name" placeholder="Adınız ve soyadınız" />
+              <div class="error-msg"></div>
+            </div>
+            <div class="form-field">
+              <label for="email">E-posta</label>
+              <input type="email" id="email" name="email" placeholder="ornek@mail.com" />
+              <div class="error-msg"></div>
+            </div>
+          </div>
+          <div class="form-row two">
+            <div class="form-field">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+90 555 000 00 00" />
+              <div class="error-msg"></div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Konu</label>
+              <select id="subject" name="subject">
+                <option value="">-- Seçiniz --</option>
+                <option value="karayolu">Karayolu Taşımacılığı</option>
+                <option value="denizyolu">Denizyolu Taşımacılığı</option>
+                <option value="havayolu">Havayolu Taşımacılığı</option>
+                <option value="diger">Diğer</option>
+              </select>
+              <div class="error-msg"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="message">Mesajınız</label>
+              <textarea id="message" name="message" placeholder="Sevkiyat detaylarınız, güzergah, ağırlık, hacim vb."></textarea>
+              <div class="error-msg"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn" style="width:100%">Mesajı Gönder</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <strong>✓ Mesajınız alındı!</strong><br>
+          En kısa sürede size geri dönüş yapacağız. Teşekkür ederiz.
+        </div>
+      </div>
+    </div>
+
+    <div class="map-placeholder reveal">
+      <div class="pin">📍</div>
+      <strong>Çiçek Lojistik Merkez Ofis</strong>
+      <span>Havaalanı Kavşağı No:42, Bakırköy / İstanbul</span>
+      <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-btn">Haritada Aç</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Çiçek Lojistik</h4>
+        <p>20 yılı aşkın deneyimimizle karayolu, denizyolu ve havayolu taşımacılığında güvenilir çözümler sunuyoruz.</p>
+        <div class="social"><a href="#">f</a><a href="#">ig</a><a href="#">in</a><a href="#">X</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="karayolu.html">Karayolu Taşımacılığı</a></li>
+          <li><a href="denizyolu.html">Denizyolu Taşımacılığı</a></li>
+          <li><a href="havayolu.html">Havayolu Taşımacılığı</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="ulkeler.html">Çalıştığımız Ülkeler</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <div class="footer-contact-item"><span class="icon">📍</span><span>Havaalanı Kavşağı No:42<br>Bakırköy / İstanbul</span></div>
+        <div class="footer-contact-item"><span class="icon">📞</span><span>+90 212 555 00 00</span></div>
+        <div class="footer-contact-item"><span class="icon">✉️</span><span>info@cicek-lojistik.com</span></div>
+        <div class="footer-contact-item"><span class="icon">🕐</span><span>Pzt-Cmt: 08:00 - 18:00</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>Konum</h4>
+        <p>Merkez ofisimizi ziyaret etmek için konum bilgilerimize ulaşın.</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-btn">📍 Haritada Aç</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Çiçek Lojistik. Tüm hakları saklıdır.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

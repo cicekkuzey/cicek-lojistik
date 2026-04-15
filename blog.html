@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Çiçek Lojistik</title>
+  <meta name="description" content="Lojistik sektörüne dair güncel yazılar, trendler ve ipuçları." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">ÇİÇEK <span>LOJİSTİK</span></a>
+    <nav class="main-nav" aria-label="Ana menü">
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Hizmetler</a>
+          <ul class="dropdown-menu">
+            <li><a href="karayolu.html">🚛 Karayolu Taşımacılığı</a></li>
+            <li><a href="denizyolu.html">🚢 Denizyolu Taşımacılığı</a></li>
+            <li><a href="havayolu.html">✈️ Havayolu Taşımacılığı</a></li>
+          </ul>
+        </li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="ulkeler.html">Ülkeler</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Menüyü aç/kapa"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Mobil menü">
+  <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li><a href="karayolu.html">Hizmetler</a></li>
+    <li class="sub"><a href="karayolu.html">— Karayolu</a></li>
+    <li class="sub"><a href="denizyolu.html">— Denizyolu</a></li>
+    <li class="sub"><a href="havayolu.html">— Havayolu</a></li>
+    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+    <li><a href="ulkeler.html">Çalıştığımız Ülkeler</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80')">
+  <div class="page-hero-content">
+    <h1><span>Blog</span></h1>
+    <p>Sektöre dair güncel yazılar, trendler ve uzman görüşleri</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="blog-grid" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal-backdrop" id="blogModal" aria-hidden="true">
+  <article class="modal" role="dialog" aria-modal="true">
+    <button class="close" aria-label="Kapat">×</button>
+    <div class="hero-img"></div>
+    <div class="body">
+      <span class="date"></span>
+      <h2></h2>
+      <div class="content"></div>
+    </div>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Çiçek Lojistik</h4>
+        <p>20 yılı aşkın deneyimimizle karayolu, denizyolu ve havayolu taşımacılığında güvenilir çözümler sunuyoruz.</p>
+        <div class="social"><a href="#">f</a><a href="#">ig</a><a href="#">in</a><a href="#">X</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="karayolu.html">Karayolu Taşımacılığı</a></li>
+          <li><a href="denizyolu.html">Denizyolu Taşımacılığı</a></li>
+          <li><a href="havayolu.html">Havayolu Taşımacılığı</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="ulkeler.html">Çalıştığımız Ülkeler</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <div class="footer-contact-item"><span class="icon">📍</span><span>Havaalanı Kavşağı No:42<br>Bakırköy / İstanbul</span></div>
+        <div class="footer-contact-item"><span class="icon">📞</span><span>+90 212 555 00 00</span></div>
+        <div class="footer-contact-item"><span class="icon">✉️</span><span>info@cicek-lojistik.com</span></div>
+        <div class="footer-contact-item"><span class="icon">🕐</span><span>Pzt-Cmt: 08:00 - 18:00</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>Konum</h4>
+        <p>Merkez ofisimizi ziyaret etmek için konum bilgilerimize ulaşın.</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-btn">📍 Haritada Aç</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Çiçek Lojistik. Tüm hakları saklıdır.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>
